@@ -24,7 +24,8 @@ jobs:
 
      - name: Write markdown file
        run: |
-         echo "${{ github.event.inputs.content }}" > "${{ github.event.inputs.filename }}"
+         mkdir -p Documentation
+         echo "${{ github.event.inputs.content }}" > "Documentation/${{ github.event.inputs.filename }}"
 
      - name: Commit and push
        run: |
