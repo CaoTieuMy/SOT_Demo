@@ -11,7 +11,7 @@
 | Field | Details |
 |---|---|
 | **Project Name** | QaSL |
-| **Project Owner, Co-Owner** | Andrea |
+| **Project Owner, Co-Owner** | Andrea, OFFEN |
 | **Customer** | VW |
 | **Visibility** | no |
 | **Industry** | Automotive |
@@ -22,46 +22,43 @@
 ---
 
 ## Project Insights
-> With the need for a strong foundation for future data management, the purpose of the project is to reduce bottlenecks and silos in data management while allowing scalability — without compromising on data governance. The goal is to have an efficient Data Products Infrastructure stack, shifting mindset and treating data as a product, enabling users to share, discover and utilize data from other domains — maximizing and delivering data-driven value at scale. Using cutting-edge technologies, Reply implemented an innovative data-mesh solution, leading to better decision making, saving costs and boosting revenues for VW. Reply tracks compliance with project specifications and milestones to achieve VW's data mesh goal.
+> Using cutting-edge technologies, Reply implemented an innovative data-mesh solution, leading to better decision making, saving costs and boosting revenues for VW. The goal is to have an efficient Data Products Infrastructure stack, shifting mindset and treating data as a product, enabling users to share, discover and utilize data from other domains – maximizing and delivering data-driven value at scale. Reply tracks compliance with project specifications and milestones to achieve VW's data mesh goal.
 
----
+
 
 ## Business Needs
 
-#### 1. Bottlenecks and Silos in Data Management
+#### 1. Bottlenecks and Data Silos
 
-Existing data management structures created significant bottlenecks and silos, hindering efficient data access and collaboration across domains.
+VW had fragmented data structures blocking the flow of information across teams and domains, leading to inefficiencies and duplicated efforts.
 
-#### 2. Lack of Scalable Data Infrastructure
+#### 2. Missing Scalability
 
-The customer lacked a scalable data products infrastructure capable of supporting growing data demands without compromising governance.
+The existing infrastructure could not be scaled efficiently to meet growing data demands across the organization.
 
-#### 3. Need for a Data-Driven Culture
+#### 3. Lack of Data Governance
 
-VW required a fundamental mindset shift to treat data as a product, enabling domains to share, discover, and utilize data to deliver data-driven value at scale.
+A solid foundation for data management and compliance was missing, creating risks around data quality, security, and regulatory adherence.
 
----
+
 
 ## Provided Services
-### Cloud / onPrem: On-Premise
+### Cloud / onPrem: On-premise and hybrid cloud
 
-#### 1. Agile Project Steering and Planning
+#### 1. Agile Project Planning & Steering
 
-Reply supports the planning and steering of the project and development team through Agile principles, dedicated roles, and ceremonies — ensuring effective collaboration, prompt issue resolution, and continuous improvement.
+Reply supports the planning and steering of the project and development team through Agile principles, dedicated roles, and ceremonies – ensuring effective collaboration, prompt issue resolution, and continuous improvement.
 
-#### 2. Agile IT-PEP Process Facilitation
+#### 2. IT-PEP Process Adherence & Stakeholder Communication
 
-Reply experts facilitate adherence to agile IT-PEP procedures, documentation, and processes, promoting transparent communication among stakeholders and timely milestone achievement according to the project timeline.
+Reply experts facilitate the adherence to agile IT-PEP procedures, documentation, and processes, promoting transparent communication among stakeholders and timely milestone achievement according to the project timeline.
 
-#### 3. Data Lake Analytics Platform Implementation
+#### 3. Data Lake Analytics Platform & Data Mesh Implementation
 
-The data lake analytics platform enables seamless connectivity to diverse data sources, eliminating the need for data movement. It ensures fast and accurate access to on-premise, cloud, or hybrid cloud data, supporting federated queries with fine-grained access controls to protect sensitive data.
+The data lake analytics platform enables seamless connectivity to diverse data sources, eliminating the need for data movement. Based on interactive workshops, a robust data-mesh solution was implemented, emphasizing federated computational governance and a self-service data platform.
 
-#### 4. Data Mesh Solution Design and Implementation
 
-Based on interactive workshops, all aspects and expectations of the existing infrastructure were evaluated and a robust data-mesh solution was implemented by Reply, making VW a data-driven company — with federated computational governance and a self-service data platform at its core.
 
----
 
 ## Frameworks & Tech Stack
 
@@ -72,15 +69,11 @@ Based on interactive workshops, all aspects and expectations of the existing inf
 - Argo
 - OpenShift
 
----
-
 ## Working Methodology
-
 - Agile IT-PEP
+- Agile Coaching
 - Scaled Agile Framework (SAFe)
-- SCRUM
 
----
 
 ## Mastering Challenges
 
