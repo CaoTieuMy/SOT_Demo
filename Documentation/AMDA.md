@@ -2,9 +2,9 @@
 
 | Field | Details |
 |---|---|
-| Created | 2026/09/03 |
-| Last Reviewed | 2026/09/03 |
-| Author | Tieu My |
+| Created | 2026-09-03 |
+| Last Reviewed | 2026-09-03 |
+| Author | Tieu My Cao |
 
 ## General Information
 
@@ -22,30 +22,46 @@
 ---
 
 ## Project Insights
-> Laufendes DevOps-Projekt für Custom Application Monitoring von Workloads auf einer Big-Data-Plattform basierend auf OpenShift. Ziel war die Verbesserung des Entwicklungs- und Deployment-Prozesses für Monitoring, Alerting und Visualisierung von Metrics und Logs zur Effizienzsteigerung des Monitoring-Teams. Die Lösung wurde für 3 produktive Anwendungen der Data Analytics Platform ausgerollt; weitere Rollouts laufen oder sind geplant.
+> Ongoing DevOps project for custom application monitoring of workloads on a Big Data platform based on OpenShift. The goal was to improve the development and deployment process for monitoring, alerting, and visualization of metrics and logs to increase the efficiency of the monitoring team. The solution was rolled out for 3 productive applications of the Data Analytics Platform; further rollouts are ongoing or planned.
+
+
 
 ## Business Needs
 
-#### 1. Transparenz und frühzeitige Fehlererkennung
-Im Projektkontext war immer wieder zu spüren, dass wir mehr Transparenz darüber brauchen, was in den einzelnen Systemen eigentlich passiert, vor allem wenn mehrere Komponenten zusammenspielen und Fehler nicht sofort eindeutig zuordenbar sind. Es geht weniger darum, einfach nur zusätzliche technische Metriken zu sammeln, sondern eher darum, ein gemeinsames Verständnis zu schaffen, wie stabil die Plattform läuft, wo Engpässe entstehen und welche Auffälligkeiten sich frühzeitig erkennen lassen. Gerade im Automotive-Umfeld mit OnPrem-Hosting und längeren Betriebszeiträumen ist es wichtig, dass Betrieb, Entwicklung und fachliche Ansprechpartner nicht erst bei akuten Incidents reagieren, sondern idealerweise schon vorher Hinweise bekommen, wenn sich ein Problem anbahnt. In den Gesprächen wurde deutlich, dass aktuell viele Informationen zwar irgendwo vorhanden sind, aber nicht immer zentral, konsistent oder verständlich genug aufbereitet werden. Deshalb besteht der Bedarf, Monitoring und Observability so auszubauen, dass technische Zustände nachvollziehbarer werden und alle Beteiligten schneller erkennen können, ob ein Problem infrastrukturell, applikativ oder prozessual verursacht wird.
+#### 1. Lack of End-to-End System Transparency
 
-#### 2. Effiziente Fehleranalyse und reduzierte Ausfallzeiten
-Ein wiederkehrendes Thema war, dass bei Störungen oder unerwartetem Verhalten oft zu viel Zeit verloren geht, bis klar ist, wo die Ursache liegt und wer konkret reagieren muss. Besonders bei komplexeren Systemlandschaften ist es schwierig, einzelne Logs, Metriken und Events manuell zusammenzubringen, wenn diese nicht sauber korreliert oder einheitlich strukturiert sind. Daraus ergibt sich der Bedarf, die Observability-Fähigkeiten so zu verbessern, dass Fehlerbilder schneller eingegrenzt werden können und man im Betrieb nicht jedes Mal bei null anfangen muss. Wichtig ist dabei nicht nur die reine technische Überwachung, sondern auch die Möglichkeit, Abläufe rückwirkend nachvollziehen zu können: Was ist wann passiert, welche Komponente war betroffen, welche Abhängigkeiten gab es und ob es ähnliche Muster bereits früher gegeben hat. Gerade für ein langfristig laufendes Projekt wie AMDA ist es aus Business-Sicht relevant, Ausfallzeiten zu reduzieren, Reaktionszeiten zu verbessern und die Abstimmung zwischen den beteiligten Teams effizienter zu machen. Ziel ist also eine bessere Entscheidungsgrundlage im Incident-Fall, ohne dass sich die Teams mühsam Informationen aus verschiedenen Systemen zusammensuchen müssen.
+In the project context, there was a recurring need for more transparency about what is actually happening within individual systems, especially when multiple components interact and errors cannot be immediately attributed. Rather than simply collecting additional technical metrics, the focus was on creating a shared understanding of platform stability, identifying bottlenecks, and detecting anomalies early. In the automotive environment with on-premises hosting and longer operational periods, it is critical that operations, development, and business stakeholders do not only react to acute incidents but ideally receive early warnings when a problem is developing. Discussions revealed that much information already exists somewhere but is not always centralized, consistent, or presented in an understandable way. Therefore, the need arose to expand monitoring and observability so that technical states become more traceable and all stakeholders can more quickly identify whether a problem is caused by infrastructure, application, or process issues.
 
-#### 3. Konsistente Sicht auf Betriebsqualität zur kontinuierlichen Verbesserung
-In den Abstimmungen wurde außerdem deutlich, dass Monitoring nicht nur als rein technisches Kontrollinstrument verstanden werden soll, sondern auch als Grundlage, um den Betrieb langfristig gezielter zu steuern und Verbesserungen ableiten zu können. Es besteht der Bedarf, relevante Informationen so aufzubereiten, dass sie sowohl für technische Teams als auch für Projektverantwortliche verständlich und nutzbar sind. Dabei geht es beispielsweise um Stabilität, Verfügbarkeit, Performance, Fehlerhäufigkeiten und wiederkehrende Auffälligkeiten, aber auch um die Frage, wie gut bestehende Prozesse im Alltag funktionieren. Aktuell wirken viele Informationen eher verteilt oder situationsbezogen, wodurch es schwierig ist, ein einheitliches Bild über den tatsächlichen Projekt- und Systemzustand zu erhalten. Für VW beziehungsweise das AMDA-Projekt wäre es deshalb wichtig, eine konsistente Sicht auf die Betriebsqualität zu schaffen, um Risiken früher zu erkennen, Maßnahmen besser zu priorisieren und technische Optimierungen nachvollziehbar gegenüber Stakeholdern begründen zu können. Insgesamt soll Observability damit nicht nur beim Troubleshooting helfen, sondern auch eine belastbare Basis für kontinuierliche Verbesserung und langfristige Betriebsstabilität liefern.
+#### 2. Slow Root Cause Analysis and Incident Response
+
+A recurring theme was that during outages or unexpected behavior, too much time is lost before the root cause is identified and the responsible party can act. Especially in complex system landscapes, it is difficult to manually correlate individual logs, metrics, and events when they are not properly correlated or uniformly structured. This created the need to improve observability capabilities so that error patterns can be narrowed down more quickly and operations teams do not have to start from scratch every time. Important is not only pure technical monitoring but also the ability to retrospectively trace what happened, when, which component was affected, what dependencies existed, and whether similar patterns occurred before. For a long-running project like AMDA, it is business-critical to reduce downtime, improve response times, and make coordination between teams more efficient. The goal is a better decision-making basis during incidents without teams having to laboriously gather information from different systems.
+
+#### 3. Lack of a Unified Operational Quality View
+
+Discussions also made clear that monitoring should not only be understood as a purely technical control instrument but also as a foundation for steering operations more purposefully in the long term and deriving improvements. There is a need to prepare relevant information so that it is understandable and usable for both technical teams and project stakeholders. This includes stability, availability, performance, error frequencies, and recurring anomalies, but also the question of how well existing processes function in daily operations. Currently, much information appears distributed or situational, making it difficult to obtain a unified picture of the actual project and system state. For VW and the AMDA project, it would therefore be important to create a consistent view of operational quality to recognize risks earlier, prioritize measures better, and justify technical optimizations transparently to stakeholders. Overall, observability should not only help with troubleshooting but also provide a reliable basis for continuous improvement and long-term operational stability.
+
+
 
 ## Provided Services
 ### Cloud/ onPrem: OnPrem
 
-#### 1. CI/CD-Pipeline
-CI/CD-Pipeline für automatisches Deployment von Dashboards, Alerts und Workloads.
+#### 1. CI/CD Pipeline for Automated Deployment
+
+CI/CD pipeline for automatic deployment of dashboards, alerts, and workloads.
 
 #### 2. Infrastructure-as-Code Workspace
-Infrastructure-as-Code Workspace mit Helm Packages und Docker Images.
 
-#### 3. Custom Monitoring Tool & Grafana Dashboards
-Custom Monitoring Tool für Trino Queries. Grafana Dashboards für Metrikenvisualisierung mit Echtzeit-Sichtbarkeit auf System Health und Ressourcenverbrauch.
+Infrastructure-as-Code workspace with Helm packages and Docker images.
+
+#### 3. Custom Monitoring Tool for Trino Queries
+
+Custom monitoring tool for Trino query monitoring and analysis.
+
+#### 4. Grafana Dashboards for Metrics Visualization
+
+Grafana dashboards for metrics visualization with real-time visibility into system health and resource consumption.
+
+
 
 ## Frameworks & Tech Stack
 
@@ -60,13 +76,18 @@ Custom Monitoring Tool für Trino Queries. Grafana Dashboards für Metrikenvisua
 ## Working methodology
 - OFFEN
 
+
 ## Mastering Challenges
 
-#### 1. DevOps-Struktur aufsetzen
-DevOps-Struktur von Grund auf für bestehende manuell erstellte Ressourcen aufsetzen.
+#### 1. Building DevOps Structure from Scratch
 
-#### 2. Lösung optimieren und refactoren
-Lösung optimieren und refactoren, um Onboarding und Support weiterer Anwendungen zu ermöglichen.
+Setting up a DevOps structure from the ground up for existing manually created resources.
 
-#### 3. Besonderheiten spezifischer Anwendungen verstehen
-Besonderheiten spezifischer Anwendungen verstehen, um stabile generische und zugleich angepasste Lösung zu liefern.
+#### 2. Optimizing for Multi-Application Onboarding
+
+Optimizing and refactoring the solution to enable onboarding and support of additional applications.
+
+#### 3. Balancing Generic and Application-Specific Solutions
+
+Understanding the specifics of individual applications to deliver a stable yet generic and simultaneously tailored solution.
+
