@@ -22,44 +22,40 @@
 ---
 
 ## Project Insights
-> A DevOps project for custom application monitoring of workloads on an OpenShift-based big-data platform. It improved the development and deployment process for monitoring, alerting, and the visualization of metrics and logs to increase the monitoring team's efficiency. The solution was rolled out to three productive Data Analytics Platform applications; further rollouts were ongoing or planned.
+> Ongoing DevOps project for custom application monitoring of workloads on an OpenShift-based big-data platform. The objective was to improve development and deployment processes for monitoring, alerting, and the visualization of metrics and logs, increasing the monitoring team's efficiency. The solution was rolled out to three productive Data Analytics Platform applications; further rollouts are ongoing or planned.
 
 
 
 ## Business Needs
 
-#### 1. Improve Platform Transparency
+#### 1. Centralized system transparency
 
-Provide a central, consistent, and understandable view of system behavior, platform stability, bottlenecks, and early indicators of anomalies across interacting components.
+Create a consistent, understandable view of platform stability, bottlenecks, and early anomalies across interacting system components, so teams can distinguish infrastructure, application, and process-related issues.
 
-#### 2. Decentralize Analysis and Response
+#### 2. Faster incident diagnosis
 
-Improve observability to enable faster root-cause analysis, correlation of logs, metrics, and events, and more efficient incident response across teams.
+Improve the correlation and structure of logs, metrics, and events to identify root causes, affected components, dependencies, and recurring patterns faster; reduce downtime and improve response times.
 
-#### 3. Enable Continuous Operational Improvement
+#### 3. Continuous operational improvement
 
-Create a consistent view of operational quality to identify risks early, prioritize measures, and support continuous improvements in stability, availability, performance, and processes.
+Provide technical teams and project stakeholders with an understandable, consistent view of stability, availability, performance, error frequency, and recurring anomalies to identify risks early and prioritize improvements.
 
 
 
 ## Provided Services
 ### Cloud/ onPrem: OnPrem
 
-#### 1. Automated Monitoring Deployment
+#### 1. Automated monitoring deployment
 
-Built a CI/CD pipeline for the automated deployment of dashboards, alerts, and workloads.
+Implemented a CI/CD pipeline for the automated deployment of dashboards, alerts, and workloads.
 
-#### 2. Infrastructure as Code
+#### 2. Infrastructure as Code workspace
 
-Established an infrastructure-as-code workspace with Helm packages and Docker images.
+Built an Infrastructure-as-Code workspace with Helm packages and Docker images.
 
-#### 3. Custom Trino Query Monitoring
+#### 3. Custom Trino query monitoring
 
 Developed a custom monitoring tool for Trino queries.
-
-#### 4. Metrics Visualization
-
-Created Grafana dashboards for metrics visualization, providing real-time visibility into system health and resource consumption.
 
 
 
@@ -79,15 +75,15 @@ Created Grafana dashboards for metrics visualization, providing real-time visibi
 
 ## Mastering Challenges
 
-#### 1. Establishing a DevOps Foundation
+#### 1. Establishing the DevOps foundation
 
-Set up a DevOps structure from scratch for existing, manually created resources.
+Set up the DevOps structure from scratch for existing manually created resources.
 
-#### 2. Scaling Onboarding and Support
+#### 2. Enabling scalable onboarding and support
 
-Optimized and refactored the solution to enable onboarding and support for further applications.
+Optimized and refactored the solution to enable onboarding and support for additional applications.
 
-#### 3. Balancing Generic and Tailored Delivery
+#### 3. Balancing generic stability and application-specific needs
 
-Understood application-specific characteristics to deliver a stable solution that was both generic and appropriately customized.
+Understood the specifics of individual applications to deliver a stable, generic, and appropriately customized solution.
 
