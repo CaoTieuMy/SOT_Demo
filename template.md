@@ -18,12 +18,19 @@
 | **Topic / Area** | ... |
 | **From** | ... |
 | **To** | ... |
+| **Reply FTE's involved** | ... |
+| **Total Revenue generated** | ... |
+
 
 ---
 
 ## Project Insights
 > ...
 
+
+## Project KPI's
+- ....
+- ....
 
 
 ## Business Needs
